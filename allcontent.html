@@ -1,0 +1,256 @@
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Baloo 2', cursive;
+            padding: 20px;
+        }
+
+        .title-section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .title-section-h2 {
+            font-family: 'Baloo 2', cursive;
+            color: #6D6C6D;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .tabs-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+
+        .tab-button {
+            min-width: 120px;
+            padding: 10px 20px;
+            border: 2px solid #6D6C6D;
+            border-radius: 25px;
+            background: transparent;
+            color: #6D6C6D;
+            font-family: 'Baloo 2', cursive;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .tab-button svg {
+            width: 18px;
+            height: 18px;
+            flex-shrink: 0;
+        }
+
+        .tab-button.active {
+            background: #008080;
+            color: white;
+            border-color: #008080;
+        }
+
+        .tab-button.active svg {
+            stroke: white;
+        }
+
+        @media (max-width: 768px) {
+            .tabs-container {
+                gap: 10px;
+            }
+            
+            .tab-button {
+                min-width: 100px;
+                padding: 8px 15px;
+                font-size: 13px;
+            }
+
+            .tab-button svg {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    </style>
+
+
+
+<div class="banner-princpial">
+    <picture>
+        <source
+            srcset="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/b96425e6-149d-4759-b85d-ecbc826f838e___435bd33d6f4cb1795d959fff0ac3204e.webp"
+            media="(max-width:768px)" alt="Erayba" width="100%">
+        <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/21931331-9fe0-408d-a069-95a03094beca___95e26dccc1de4c6b9d00c4f76d9b2c09.webp"
+            width="100%" alt="Erayba" />
+    </picture>
+</div>
+
+<div class="banner-princpial">
+    <picture>
+        <source srcset="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/4c2a684e-449c-4329-a76a-20781f320f18___16d48cd25d5ebc0f00cfc13f78e4ed16.png
+" media="(max-width:768px)" alt="Erayba" width="100%">
+        <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/4c2a684e-449c-4329-a76a-20781f320f18___16d48cd25d5ebc0f00cfc13f78e4ed16.png
+" width="100%" alt="Erayba" />
+    </picture>
+</div>
+
+
+<div class="title-section">
+        <h2 class="title-section-h2">
+            Conoce la línea ideal para cada necesidad de tu cabello
+        </h2>
+
+        <div class="tabs-container">
+            <button class="tab-button active" data-tab="hidratacion">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+                </svg>
+                Hidratación
+            </button>
+            
+            <button class="tab-button" data-tab="detox">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <path d="M16 10a4 4 0 0 1-8 0"></path>
+                </svg>
+                Detox
+            </button>
+            
+            <button class="tab-button" data-tab="cuidado-color">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="13.5" cy="6.5" r=".5"></circle>
+                    <circle cx="17.5" cy="10.5" r=".5"></circle>
+                    <circle cx="8.5" cy="7.5" r=".5"></circle>
+                    <circle cx="6.5" cy="12.5" r=".5"></circle>
+                    <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"></path>
+                </svg>
+                Cuidado Color
+            </button>
+            
+            <button class="tab-button" data-tab="anti-frizz">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+                Anti Frizz
+            </button>
+        </div>
+    </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.tab-button');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                  
+                    tabs.forEach(t => t.classList.remove('active'));
+                    
+
+                    this.classList.add('active');
+                    
+                    const tabName = this.getAttribute('data-tab');
+                    console.log('Tab activo:', tabName);
+                    
+                   
+                });
+            });
+        });
+    </script>
+
+
+<div class="contenedor-banner-principal">
+    <a href="/erayba?utmi_cp=visibilidadTarifario&utmi_p=landing-marca&utmi_pc=landing-marca-erayba-junio2024">
+        <picture>
+            <source
+                srcset="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/090465fa-b5bc-43a2-b7c2-81c7c9ed10f9___a92f84802769382ea2ba350ab9e8a915.png"
+                media="(max-width:768px)" alt="" width="60%" />
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/090465fa-b5bc-43a2-b7c2-81c7c9ed10f9___a92f84802769382ea2ba350ab9e8a915.png"
+                alt="" width="20%" />
+        </picture>
+    </a>
+</div>
+
+
+<div class="contenedor-banner-principal" id="categorias">
+
+    <picture>
+        <source
+            srcset="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/dda167c5-53a5-40c7-b21a-bc3261ffa27b___874fbe5dfdbfccac67ffa5fc1fea3eac.png"
+            media="(max-width:768px)" alt="" width="80%" />
+        <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/49ce7c16-3778-4204-a000-134076215026___9afe0a571a29a7b44d3bbfb4bf6c8ecc.png"
+            alt="" width="80%" />
+    </picture>
+</div>
+
+
+<div class="contenedor-lineas-productos marca-ba">
+    <div class="flex">
+        <div class="w-33">
+            <a
+                href="/2665?map=productClusterIds&utmi_cp=visibilidadTarifario&utmi_p=landing-marca&utmi_pc=landing-marca-junio2024">
+                <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/12b11d2a-db2e-4e96-8d39-416e56a231fe___d1e73be7c65d150b019c5d839e7ad27c.webp"
+                    alt="Erayba cuero cabelludo">
+            </a>
+        </div>
+        <div class="w-33">
+            <a
+                href="/2667?map=productClusterIds&utmi_cp=visibilidadTarifario&utmi_p=landing-marca&utmi_pc=landing-marca-junio2024">
+                <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/fec5beff-97f3-407a-830f-39c0e5f0adb0___244944b4e737be026667056d5c7d8404.webp"
+                    alt="Erayba detox">
+            </a>
+        </div>
+        <div class="w-33">
+            <a
+                href="/2668?map=productClusterIds&utmi_cp=visibilidadTarifario&utmi_p=landing-marca&utmi_pc=landing-marca-junio2024">
+                <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/6a878bce-e3ea-4bf1-9054-198406d52ec7___25d4de0cdcd2b7461bb92549bf3402b1.webp"
+                    alt="Erayba cuidado color">
+            </a>
+        </div>
+
+
+    </div>
+</div>
+
+
+<div class="contenedor-marca-ba">
+    <div class="flex">
+        <div class="w-40">
+
+            <img src="https://medipielsa.vtexassets.com/assets/vtex.file-manager-graphql/images/07892a9f-f54d-4ca9-837e-5a38a5be7167___da6e89e8c21de92f7e63165bdc69013c.webp"
+                alt="Erayba">
+
+        </div>
+
+        <div class="w-60">
+            <h1>Think Hair. <strong>Think Beauty.</strong> </h1>
+
+            <p>
+                <strong>Compartimos la pasión por la belleza con los profesionales de la peluquería.</strong>
+                <br /><br />
+                Amamos lo que hacemos, por ello nuestro compromiso con el desarrollo de los mejores productos
+                profesionales de máxima eficacia. Utilizamos fórmulas únicas y los mejores ingredientes naturales y
+                veganos, para tratar el cabello de la manera más saludable con profundo cuidado y respeto, así como
+                también delicadeza y respeto hacia nuestro entorno.
+            </p>
+        </div>
+    </div>
+
+</div>
+
